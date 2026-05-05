@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Portfolio | Ferdoous Ahmed</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #030b24;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glow {
+      box-shadow: 0 0 40px rgba(212, 255, 99, 0.25);
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body class="text-white">
+
+  <!-- NAVBAR -->
+  <header class="w-full px-6 md:px-14 py-6 flex items-center justify-between">
+    <div class="text-sm font-bold tracking-widest">FOLIO</div>
+
+    <nav class="hidden md:flex gap-10 text-xs uppercase text-gray-300">
+      <a href="#" class="hover:text-lime-300">About Me</a>
+      <a href="#" class="hover:text-lime-300">Skills</a>
+      <a href="#" class="hover:text-lime-300">Projects</a>
+    </nav>
+
+    <button class="border border-lime-300 text-lime-300 px-5 py-2 rounded-full text-xs hover:bg-lime-300 hover:text-black transition">
+      Contact
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative px-6 md:px-14 pt-10 pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-t from-blue-900/20 to-transparent"></div>
+    <div class="absolute top-32 left-1/2 -translate-x-1/2 w-[320px] h[320px] bg-lime-300/20 blur-[120px] rounded-full"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 items-center gap-8">
+      
+      <div class="glass rounded-2xl p-5 text-sm text-gray-300 card-hover">
+        <p class="text-white font-semibold mb-2">Client Review From Australia 🇦🇺</p>
+        <p class="text-xs leading-relaxed">
+          Outstanding web developer. Professional design, fast delivery and great communication.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          I am <span class="text-lime-300 italic">Ferdoous Ahmed</span><br />
+          Full Stack Developer
+        </h1>
+
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop"
+             alt="Developer"
+             class="w-72 md:w-80 mx-auto mt-10 rounded-3xl object-cover glow" />
+
+        <button class="mt-6 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition">
+          MY PROJECTS
+        </button>
+      </div>
+
+      <div class="glass rounded-2xl p-5 text-sm text-gray-300 card-hover">
+        <p class="text-white font-semibold mb-4">MY EXPERTISE</p>
+        <div class="space-y-3 text-xs">
+          <div>
+            <div class="flex justify-between mb-1"><span>Backend</span><span>85%</span></div>
+            <div class="w-full h-2 bg-white/10 rounded-full"><div class="w-[85%] h-2 bg-lime-300 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span>CMS</span><span>70%</span></div>
+            <div class="w-full h-2 bg-white/10 rounded-full"><div class="w-[70%] h-2 bg-lime-300 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-1"><span>Frontend</span><span>93%</span></div>
+            <div class="w-full h-2 bg-white/10 rounded-full"><div class="w-[93%] h-2 bg-lime-300 rounded-full"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="px-6 md:px-14 py-20 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold text-lime-300 mb-8">WHO AM I ?</h2>
+    <div class="max-w-3xl mx-auto text-gray-300 leading-8 text-sm md:text-base">
+      <p>
+        I am a full-stack website developer specialized in ReactJS. Plus, I also know some WordPress front-end development with Elementor and WooCommerce.
+      </p>
+      <p class="mt-6">
+        Programming is my passion, that's the reason I am working in the field of my academic career.
+      </p>
+      <p class="mt-6">
+        Additionally, I like to play PC games and read story-type books in my leisure time which is kinda fun and relaxing!
+      </p>
+    </div>
+
+    <button class="mt-10 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition">
+      SHOW MY PROJECTS
+    </button>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="px-6 md:px-14 py-20">
+    <h2 class="text-4xl md:text-5xl font-bold text-lime-300 text-center mb-12">MY SKILLS</h2>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">🌐</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">🎨</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">⚡</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">⚛️</div>
+
+      <div class="glass rounded-2xl row-span-2 p-6 flex flex-col justify-center card-hover">
+        <h3 class="text-5xl font-bold text-lime-300">4</h3>
+        <p class="text-2xl font-semibold mt-2">Years Experience Working</p>
+        <button class="mt-6 bg-lime-300 text-black px-5 py-3 rounded-full text-xs font-semibold">
+          DOWNLOAD MY CV
+        </button>
+      </div>
+
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">N</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">🟢</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">💨</div>
+      <div class="glass rounded-2xl h-32 flex items-center justify-center text-4xl card-hover">🍃</div>
+    </div>
+
+    <div class="max-w-6xl mx-auto glass rounded-2xl mt-10 p-8 text-center">
+      <h3 class="text-2xl font-bold text-lime-300 mb-6">ADDITIONAL SKILLS</h3>
+      <div class="flex flex-wrap justify-center gap-6 text-3xl">
+        <span>🅱️</span>
+        <span>🔗</span>
+        <span>🔥</span>
+        <span>🛒</span>
+        <span>⚙️</span>
+        <span>📝</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="px-6 md:px-14 py-20">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+          THE WORKS CLOSEST TO MY HEART
+        </h2>
+        <button class="mt-8 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition">
+          SHOW MY PROJECTS
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop" class="rounded-3xl h-80 object-cover w-full" />
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600&auto=format&fit=crop" class="rounded-3xl h-80 object-cover w-full" />
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop" class="rounded-3xl h-80 object-cover w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="px-6 md:px-14 py-20">
+    <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-14 text-black">
+      <h2 class="text-4xl md:text-6xl font-bold text-center mb-10">LET’S HAVE A CHAT</h2>
+
+      <form class="space-y-5">
+        <input type="text" placeholder="YOUR NAME" class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none" />
+        <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none" />
+        <textarea rows="5" placeholder="CHAT HERE" class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none"></textarea>
+
+        <button class="w-full bg-lime-300 text-black py-4 rounded-full font-semibold hover:scale-[1.02] transition">
+          SUBMIT HERE
+        </button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
