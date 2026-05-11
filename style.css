@@ -4,7 +4,6 @@ body {
   font-family: Arial, sans-serif;
   background: #030b24;
 }
-
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -15,11 +14,9 @@ body {
 .glow {
   box-shadow: 0 0 40px rgba(212, 255, 99, 0.25);
 }
-
 .card-hover {
   transition: all 0.3s ease;
 }
-
 .card-hover:hover {
   transform: translateY(-6px);
 }
