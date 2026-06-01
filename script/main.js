@@ -12,7 +12,7 @@ const infoUsuario = {
     autor: "Mi Papa",
     comentario: "Excelente desarrollador web. Diseño profesional, entrega rápida y excelente comunicación."
   },
-  imgprofile: "./galeria/WhatsApp Image 2025-12-26 at 1.39.57 PM.png",
+  imgprofile: "./galeria/perfil.png",
   otrasImagenes: {
     logoHeader: "https://es.egamersworld.com/uploads/dota2/teams/team-secret-logo.webp",
     decoracionSeccion1: "./galeria/mi foto.jpg",
