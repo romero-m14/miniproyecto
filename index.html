@@ -1,312 +1,347 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Miguel Romero</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <script src="./script/darkmoon.js"></script>
+    <script type="module" src="./script/main.js"></script>
   </head>
-  <body class="bg-[#020617] text-white overflow-x-hidden">
-    <header class="w-full px-6 md:px-14 py-6 flex items-center justify-between">
+  <body
+    id="body"
+    class="bg-slate-50 text-slate-900 dark:bg-[#020617] min-h-screen dark:text-white overflow-x-hidden transition-colors duration-300"
+  >
+    <header
+      class="w-full px-6 md:px-14 py-6 flex items-center justify-between border-b border-slate-200/80 dark:border-zinc-800/50 transition-colors relative"
+    >
       <div class="flex items-center gap-2">
-        <img
-          src="https://es.egamersworld.com/uploads/dota2/teams/team-secret-logo.webp"
-          alt="Logo"
-          class="w-15 h-auto"
-        />
-        <span class="text-sm font-bold tracking-widest"></span>
+        <img id="header-logo" src="" alt="Logo" class="w-15 h-auto" />
+        <span
+          id="perfil-nombre"
+          class="text-sm font-bold tracking-widest text-slate-800 dark:text-slate-200"
+          >Cargando...</span
+        >
       </div>
 
-      <nav class="hidden md:flex gap-10 text-xs uppercase text-gray-300">
-        <a href="#" class="hover:text-lime-300">About Me</a>
-        <a href="#" class="hover:text-lime-300">Skills</a>
-        <a href="#" class="hover:text-lime-300">Projects</a>
+      <nav
+        id="menu-navegacion"
+        class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-slate-50 dark:bg-[#020617] md:bg-transparent p-6 md:p-0 gap-6 md:gap-10 text-xs uppercase font-medium text-slate-600 dark:text-gray-300 border-b md:border-none border-slate-200 dark:border-zinc-800 z-50 transition-all"
+      >
+        <a
+          href="#"
+          class="hover:text-lime-600 dark:hover:text-lime-300 transition"
+          >Acerca de mí</a
+        >
+        <a
+          href="#habilidades-section"
+          class="hover:text-lime-600 dark:hover:text-lime-300 transition"
+          >
+Habilidades</a
+        >
+        <a
+          href="proyectos.html"
+          class="hover:text-lime-600 dark:hover:text-lime-300 transition"
+          >Proyectos</a
+        >
       </nav>
 
-      <button
-        class="border border-lime-300 text-lime-300 px-5 py-2 rounded-full text-xs hover:bg-lime-300 hover:text-black transition"
-      >
-        Contact
-      </button>
-    </header>
-    <section class="relative px-6 md:px-14 pt-10 pb-20 overflow-hidden bg-[#020617]">
-  <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(190,242,100,0.25),#08123a_35%,#020617_75%)]"></div>
-  <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 items-center gap-8">
-        <div
-          class="glass rounded-5xl p-15 text-sm text-gray-300 card-hover rotate-[-8deg] -translate-x-20 hover:scale-105 transition"
+      <div class="flex items-center gap-4">
+        <button
+          id="btndark"
+          class="bg-slate-200 hover:bg-slate-300 dark:bg-zinc-800/50 text-slate-800 dark:text-stone-100 w-10 h-10 flex items-center justify-center rounded-full border border-slate-300 dark:border-zinc-700/50 hover:scale-110 transition-all cursor-pointer backdrop-blur-sm"
         >
-          <p class="text-white text-xl font-semibold mb-5">
-            Opinión de mi Papa
-          </p>
-          <p class="text-xs leading-relaxed">
-            Excelente desarrollador web. Diseño profesional, entrega rápida y
+          <span class="dark:hidden text-base">🌙</span>
+          <span class="hidden dark:block text-base">☀️</span>
+        </button>
+        <button
+          id="btn-menu"
+          class="block md:hidden text-xl p-2 focus:outline-none dark:text-white"
+        >
+          ☰
+        </button>
+        <button
+          class="border border-lime-600 text-lime-600 dark:border-lime-300 dark:text-lime-300 px-5 py-2 rounded-full text-xs font-semibold hover:bg-lime-600 hover:text-white dark:hover:bg-lime-300 dark:hover:text-black transition"
+        >
+          Contacto
+        </button>
+      </div>
+    </header>
+    <section
+      class="relative px-6 md:px-14 pt-16 pb-24 overflow-hidden bg-slate-100/60 dark:bg-[#020617] transition-colors"
+    >
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(101,163,13,0.12),transparent_60%)] dark:bg-[radial-gradient(circle_at_center,rgba(190,242,100,0.2),#08123a_40%,#020617_80%)]"
+      ></div>
 
-excelente comunicación.
+      <div
+        class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 items-center gap-8"
+      >
+        <div
+          class="glass rounded-3xl p-6 text-sm text-slate-600 dark:text-gray-300 card-hover md:-rotate-6 md:-translate-x-10"
+        >
+          <p
+            id="opinion-autor"
+            class="text-slate-900 dark:text-white text-lg font-bold mb-3"
+          >
+            Cargando...
+          </p>
+          <p id="opinion-texto" class="text-xs leading-relaxed italic">
+            Cargando...
           </p>
         </div>
 
-        <div class="text-center">
-          <h1 class="text-1xl md:text-3xl font-bold leading-tight">
-            I am <span class="text-lime-300 italic">Ferdoous Ahmed</span><br />
-            Full Stack Developer
+        <div class="text-center order-first md:order-none">
+          <h1
+            class="text-2xl md:text-4xl font-black leading-tight text-slate-900 dark:text-white"
+          >
+            I am
+            <span
+              class="text-lime-600 dark:text-lime-300 italic font-serif font-normal"
+              >Miguel Romero</span
+            ><br />
+            <span
+              class="text-xl md:text-2xl font-medium text-slate-500 dark:text-slate-400"
+              >Full Stack Developer</span
+            >
           </h1>
 
-          <div class="relative flex justify-center mt-10">
+          <div class="relative flex justify-center mt-8">
             <div
-              class="absolute w-80 h-80 bg-lime-300/30 blur-[120px] rounded-full"
+              class="absolute w-72 h-72 bg-lime-500/20 dark:bg-lime-300/20 blur-[100px] rounded-full"
             ></div>
             <img
-              src="./galeria/WhatsApp Image 2025-12-26 at 1.39.57 PM.png"
-              class="relative w-72 md:w-80 rounded-3xl object-cover shadow-[0_0_60px_rgba(212,255,99,0.4)]"
+              id="perfil-img"
+              src=""
+              alt="Miguel Romero"
+              class="relative w-64 md:w-72 rounded-3xl object-cover shadow-[0_15px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_0_50px_rgba(212,255,99,0.3)] transition-all duration-300"
             />
           </div>
-          <button
-            class="mt-6 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition"
+          <a
+            href="proyectos.html"
+            class="inline-block mt-6 bg-lime-600 dark:bg-lime-300 text-white dark:text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition shadow-md shadow-lime-600/20"
+            >Mi Proyecto</a
           >
-            Mi Proyecto
-          </button>
         </div>
-<div class="absolute bottom-0 left-0 w-full h-32 bg-linear-to-b from-transparent to-[#020617]"></div>
+
         <div
-          class="glass rounded-2xl p-5 text-sm text-gray-300 card-hover rotate-[8deg] translate-x-20"
+          class="glass rounded-3xl p-6 text-sm text-slate-600 dark:text-gray-300 card-hover md:rotate-6 md:translate-x-10"
         >
-          <p class="text-white font-semibold mb-4">Mi Experiencia</p>
-          <div class="space-y-3 text-xs">
+          <p class="text-slate-900 dark:text-white font-bold mb-4">
+            Mi Experiencia
+          </p>
+          <div class="space-y-4 text-xs">
             <div>
-              <div class="flex justify-between mb-1">
-                <span>Backend</span><span>85%</span>
+              <div class="flex justify-between mb-1 font-medium">
+                <span>Backend</span><span>0%</span>
               </div>
-              <div class="w-full h-2 bg-white/10 rounded-full">
-                <div class="w-[85%] h-2 bg-lime-300 rounded-full"></div>
+              <div
+                class="w-full h-2 bg-slate-200 dark:bg-white/10 rounded-full"
+              >
+                <div
+                  id="barra-backend"
+                  class="h-2 bg-lime-600 dark:bg-lime-300 rounded-full transition-all duration-1000"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
             <div>
-              <div class="flex justify-between mb-1">
-                <span>CSS</span><span>70%</span>
+              <div class="flex justify-between mb-1 font-medium">
+                <span>CSS</span><span>0%</span>
               </div>
-              <div class="w-full h-2 bg-white/10 rounded-full">
-                <div class="w-[70%] h-2 bg-lime-300 rounded-full"></div>
+              <div
+                class="w-full h-2 bg-slate-200 dark:bg-white/10 rounded-full"
+              >
+                <div
+                  id="barra-css"
+                  class="h-2 bg-lime-600 dark:bg-lime-300 rounded-full transition-all duration-1000"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
             <div>
-              <div class="flex justify-between mb-1">
-                <span>Frontend</span><span>93%</span>
+              <div class="flex justify-between mb-1 font-medium">
+                <span>Frontend</span><span>0%</span>
               </div>
-              <div class="w-full h-2 bg-white/10 rounded-full">
-                <div class="w-[93%] h-2 bg-lime-300 rounded-full"></div>
+              <div
+                class="w-full h-2 bg-slate-200 dark:bg-white/10 rounded-full"
+              >
+                <div
+                  id="barra-frontend"
+                  class="h-2 bg-lime-600 dark:bg-lime-300 rounded-full transition-all duration-1000"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section
-      class=" px-6 md:px-14 py-24 text-center relative overflow-hidden"
+      class="px-6 md:px-14 py-20 text-center relative overflow-hidden bg-slate-50 dark:bg-[#020617] transition-colors"
     >
       <img
-        src="./galeria/mi foto.jpg"
-        class="hidden md:block absolute top-25 left-80 w-20 rotate-[-20deg] opacity-80 drop-shadow-[0_0_25px_rgba(190,242,100,0.9)] hover:scale-110 transition dura tion-300"
+        id="deco-1"
+        src=""
+        alt="deco"
+        class="hidden lg:block absolute top-20 left-40 w-20 rotate-[-15deg] opacity-40 dark:opacity-75 rounded-xl shadow-md hover:scale-110 transition duration-300"
       />
       <img
-        src="./galeria/foto2.jpg"
-        class="hidden md:block absolute bottom-25 left-50 w-24 rotate-[-10deg] opacity-80 drop-shadow-[0_0_25px_rgba(59,130,246,0.9)] hover:scale-110 transition duration-300"
+        id="deco-2"
+        src=""
+        alt="deco"
+        class="hidden lg:block absolute bottom-20 left-24 w-24 rotate-[-8deg] opacity-40 dark:opacity-75 rounded-xl shadow-md hover:scale-110 transition duration-300"
       />
       <img
-        src="./galeria/foto3.jpg"
-        class="hidden md:block absolute top-25 right-50 w-30 rotate-10 opacity-80 drop-shadow-[0_0_25px_rgba(236,72,153,0.9)] hover:scale-100 transition duration-300"
+        id="deco-3"
+        src=""
+        alt="deco"
+        class="hidden lg:block absolute top-20 right-36 w-28 rotate-12 opacity-40 dark:opacity-75 rounded-xl shadow-md hover:scale-110 transition duration-300"
       />
-      <h2 class="text-4xl md:text-5xl font-bold text-lime-300 mb-8">
+
+      <h2
+        class="text-3xl md:text-5xl font-black text-lime-600 dark:text-lime-300 mb-6 tracking-tight"
+      >
         Quien soy Yo
       </h2>
       <div
-        class="max-w-3xl mx-auto text-gray-300 leading-8 text-sm md:text-base"
+        class="max-w-3xl mx-auto text-slate-600 dark:text-gray-300 font-normal leading-relaxed text-sm md:text-base px-4"
       >
-        <p>
-          "La programación no es solo mi trabajo, es lo que me apasiona. Como
-          desarrollador Full Stack con manejo de ReactJS y herramientas como
-          Elementor o WooCommerce, disfruto dando vida a proyectos digitales
-          desde cero. Mi formación es constante: actualmente estoy profundizando
-          en mis estudios de Frontend para dominar las interfaces más modernas.
-          En mis ratos libres, encuentro el equilibrio perfecto entre la
-          estrategia de los juegos de PC y la narrativa de los libros de
-          historias."
-        </p>
-        <button
-          class="mt-10 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition"
+        <p id="perfil-descripcion">Cargando descripción...</p>
+        <a
+          href="proyectos.html"
+          class="inline-block mt-8 bg-lime-600 dark:bg-lime-300 text-white dark:text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition"
+          >Mirar Proyectos</a
         >
-          Mirar Proyectos
-        </button>
       </div>
     </section>
-    <section class="px-6 md:px-14 py-20">
-      <h2
-        class="text-4xl md:text-5xl font-bold text-lime-300 text-center mb-12"
-      >
-        Mis hablidades Principales
-      </h2>
-      <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
+    <section
+      id="habilidades-section"
+      class="px-6 md:px-14 py-20 bg-slate-100/50 dark:bg-[#020617] transition-colors"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h2
+          class="text-3xl font-bold text-[#d9f99d] text-center mb-10 tracking-tight uppercase"
         >
-          <img
-            src="https://devicon-website.vercel.app/api/html5/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/css3/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/javascript/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/react/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl row-span-2 p-6 flex flex-col justify-center card-hover"
-        >
-          <h3 class="text-5xl font-bold text-lime-300">4</h3>
-          <p class="text-2xl font-semibold mt-2 leading-tight">
-            años de experiencia
-          </p>
-          <button
-            class="mt-6 bg-lime-300 text-black px-5 py-3 rounded-full text-xs font-semibold hover:scale-105 transition"
+          
+Mis habilidades
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+          <div
+            id="contenedor-habilidades"
+            class="md:col-span-2 grid grid-cols-4 gap-2"
+          ></div>
+
+          <div
+            class="glass rounded-2xl p-6 flex flex-col justify-center items-center bg-[#0f172a]/80 border border-slate-800 text-center min-h-[240px]"
           >
-            Descargar mi CV
-          </button>
+            <h3 id="perfil-anios" class="text-6xl font-black text-white">0</h3>
+            <p
+              class="text-xs font-bold mt-2 text-slate-300 leading-tight max-w-[140px] uppercase tracking-wider"
+            >
+              Años de experiencia trabajando
+            </p>
+            <!-- Le agregamos el id aquí -->
+            <button
+              id="btn-download-cv"
+              class="mt-6 bg-[#d9f99d] text-black px-5 py-2.5 rounded-full text-[10px] font-bold hover:scale-105 transition tracking-wider uppercase"
+            >
+              Descargar CV
+            </button>
+          </div>
         </div>
+
         <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
+          class="mt-8 glass rounded-2xl p-6 bg-[#0f172a]/50 border border-slate-800/80"
         >
-          <img
-            src="https://devicon-website.vercel.app/api/nextjs/original.svg"
-            class="w-14 h-14 object-contain invert"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/nodejs/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/tailwindcss/plain.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-        <div
-          class="glass rounded-2xl h-32 flex items-center justify-center card-hover"
-        >
-          <img
-            src="https://devicon-website.vercel.app/api/mongodb/original.svg"
-            class="w-14 h-14 object-contain"
-          />
-        </div>
-      </div>
-      <div class="max-w-6xl mx-auto glass rounded-2xl mt-10 p-8 text-center">
-        <h2 class="text-2xl font-bold text-lime-300 mb-8">Habilidades adicionales</h2>
-        <div class="flex flex-wrap justify-center items-center gap-8">
-          <img
-            src="https://devicon-website.vercel.app/api/bootstrap/original.svg"
-            class="w-10 h-10"
-          />
-          <img
-            src="https://devicon-website.vercel.app/api/git/original.svg"
-            class="w-10 h-10"
-          />
-          <img
-            src="https://devicon-website.vercel.app/api/firebase/plain.svg"
-            class="w-10 h-10"
-          />
-          <img
-            src="https://devicon-website.vercel.app/api/woocommerce/original.svg"
-            class="w-10 h-10"
-          />
-          <img
-            src="https://devicon-website.vercel.app/api/linux/original.svg"
-            class="w-10 h-10"
-          />
-          <img
-            src="https://devicon-website.vercel.app/api/vscode/original.svg"
-            class="w-10 h-10"
-          />
+          <h3
+            class="text-xs font-bold text-[#d9f99d] text-center tracking-widest uppercase mb-6"
+          >
+            Habilidades adicionales
+          </h3>
+          <div
+            id="contenedor-adicionales"
+            class="flex flex-wrap items-center justify-center gap-8 px-4"
+          ></div>
         </div>
       </div>
     </section>
-    <section class="px-6 md:px-14 py-20">
+
+    <section
+      class="px-6 md:px-14 py-24 bg-slate-50 dark:bg-[#020617] transition-colors"
+    >
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 class="text-4xl md:text-6xl font-bold leading-tight">
-           Proyectos Destacados
+          <h2
+            class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight tracking-tight"
+          >
+            Proyectos<br class="hidden md:block" />
+            Destacados
           </h2>
-          <button
-            class="mt-8 bg-lime-300 text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition"
+          <a
+            href="proyectos.html"
+            class="inline-block mt-6 bg-lime-600 dark:bg-lime-300 text-white dark:text-black px-8 py-3 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
             Mirar Proyectos
-          </button>
+          </a>
         </div>
         <div class="grid grid-cols-3 gap-4">
           <img
             src="./galeria/jugador.jpg"
-            class="rounded-3xl h-80 object-cover w-full"
+            alt="p1"
+            class="rounded-2xl h-64 md:h-80 object-cover w-full shadow-md card-hover"
           />
           <img
             src="./galeria/programador.avif"
-            class="rounded-3xl h-80 object-cover w-full"
+            alt="p2"
+            class="rounded-2xl h-64 md:h-80 object-cover w-full shadow-md card-hover"
           />
           <img
             src="./galeria/fronted.jfif"
-            class="rounded-3xl h-80 object-cover w-full"
+            alt="p3"
+            class="rounded-2xl h-64 md:h-80 object-cover w-full shadow-md card-hover"
           />
         </div>
       </div>
     </section>
-    <section class="px-6 md:px-14 py-20">
+
+    <section
+      class="px-6 md:px-14 py-20 bg-slate-100/60 dark:bg-[#020617] transition-colors"
+    >
       <div
-        class="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-14 text-black"
+        class="max-w-4xl mx-auto bg-white dark:bg-zinc-900/40 border border-slate-200 dark:border-zinc-800 rounded-3xl p-8 md:p-14 shadow-xl transition-colors"
       >
-        <h2 class="text-4xl md:text-6xl font-bold text-center mb-10">
+        <h2
+          class="text-3xl md:text-5xl font-black text-center text-slate-900 dark:text-white mb-8 tracking-tight"
+        >
           Dejame Tu opinion Sobre mi
         </h2>
-        <form class="space-y-5">
+        <form id="form-contacto" class="space-y-4">
           <input
             type="text"
             placeholder="TU NOMBRE"
-            class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none"
+            class="w-full bg-slate-100 dark:bg-[#020617]/50 border border-transparent focus:border-lime-500 text-slate-900 dark:text-white rounded-2xl px-6 py-4 outline-none transition"
           />
           <input
             type="email"
             placeholder="DIRECCIÓN DE EMAIL"
-            class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none"
+            class="w-full bg-slate-100 dark:bg-[#020617]/50 border border-transparent focus:border-lime-500 text-slate-900 dark:text-white rounded-2xl px-6 py-4 outline-none transition"
           />
           <textarea
-            rows="5"
+            rows="4"
             placeholder="COMENTARIOS"
-            class="w-full bg-gray-100 rounded-2xl px-6 py-4 outline-none"
+            class="w-full bg-slate-100 dark:bg-[#020617]/50 border border-transparent focus:border-lime-500 text-slate-900 dark:text-white rounded-2xl px-6 py-4 outline-none transition"
           ></textarea>
           <button
-            class="w-full bg-lime-300 text-black py-4 rounded-full font-semibold hover:scale-[1.02] transition"
+            class="w-full bg-lime-600 dark:bg-lime-300 text-white dark:text-black py-4 rounded-full font-bold hover:scale-[1.01] transition"
           >
             Enviar Comentarios
           </button>
