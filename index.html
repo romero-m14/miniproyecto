@@ -22,7 +22,8 @@
       class="w-full px-6 md:px-14 py-6 flex items-center justify-between border-b border-slate-200/80 dark:border-zinc-800/50 transition-colors relative"
     >
       <div class="flex items-center gap-2">
-        <img id="header-logo" src="" alt="Logo" class="w-15 h-auto" />
+        <!-- ¡Arreglado aquí! Se cambió w-15 por dimensiones fijas reales y object-contain -->
+        <img id="header-logo" src="" alt="Logo" class="w-16 h-12 object-contain" />
         <span
           id="perfil-nombre"
           class="text-sm font-bold tracking-widest text-slate-800 dark:text-slate-200"
@@ -42,8 +43,7 @@
         <a
           href="#habilidades-section"
           class="hover:text-lime-600 dark:hover:text-lime-300 transition"
-          >
-Habilidades</a
+          >Habilidades</a
         >
         <a
           href="proyectos.html"
@@ -73,6 +73,7 @@ Habilidades</a
         </button>
       </div>
     </header>
+
     <section
       class="relative px-6 md:px-14 pt-16 pb-24 overflow-hidden bg-slate-100/60 dark:bg-[#020617] transition-colors"
     >
@@ -222,6 +223,7 @@ Habilidades</a
         >
       </div>
     </section>
+
     <section
       id="habilidades-section"
       class="px-6 md:px-14 py-20 bg-slate-100/50 dark:bg-[#020617] transition-colors"
@@ -230,8 +232,7 @@ Habilidades</a
         <h2
           class="text-3xl font-bold text-[#d9f99d] text-center mb-10 tracking-tight uppercase"
         >
-          
-Mis habilidades
+          Mis habilidades
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
@@ -249,7 +250,6 @@ Mis habilidades
             >
               Años de experiencia trabajando
             </p>
-            <!-- Le agregamos el id aquí -->
             <button
               id="btn-download-cv"
               class="mt-6 bg-[#d9f99d] text-black px-5 py-2.5 rounded-full text-[10px] font-bold hover:scale-105 transition tracking-wider uppercase"
